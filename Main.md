@@ -144,7 +144,52 @@
     </details>
     <details>
         <summary><h3>4.2. Generator mit 4 Motoren</h3></summary>
-        <p>Aufgabe.</p>
+        <figure>
+            <blockquote>
+                <h4><u>$\color{#D6DEE3}{\textsf{Situation}}$</u></h4>
+                <p>$\color{#D6DEE3}{\textsf{Es ist eine Meldeeinrichtung für den Stromverbrauch an einem Generator aufzubauen.}}$<br>
+                $\color{#D6DEE3}{\textsf{Diese soll mit Hilfe einer Steuerung realisiert werden.}}$<br>
+                <br>
+                <h4><u>$\color{#D6DEE3}{\textsf{Technologieschema}}$</u></h4><br>
+                <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/aufgabe2_bild1.png" width="500" height="auto" alt="(Bild: Technologieschema)"><br>
+                <h4><u>$\color{#D6DEE3}{\textsf{Typenschilder der Motoren}}$</u></h4><br>
+                <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/aufgabe2_bild2.png" width="500" height="auto" alt="(Bild: Technologieschema)"><br>
+                <h4><u>$\color{#D6DEE3}{\textsf{Funktionsbeschreibung}}$</u></h4><br>
+                $\color{#D6DEE3}{\textsf{Ein Generator liefert maximal 7kW. An Ihm können maximal 4 Motoren angeschlossen werden.}}$<br>
+                $\color{#D6DEE3}{\textsf{Diese Motoren haben die angegebenen Leistungswerte.}}$<br>
+                $\color{#D6DEE3}{\textsf{Es soll am Ausgang A 1-Signal liegen, wenn mehr als 7kW eingeschaltet werden.}}$<br>
+                <br>
+                <h4><u>$\color{#D6DEE3}{\textsf{Zuordnungsliste (BMK - Tabelle)}}$</u></h4><br>
+                | <b>BMK</b> | <b>E/A1</b> | <b>Funktion</b> |
+                | --- | --- | --- |
+                | PA | E0.0 | Motor A |
+                | PB | E0.1 | Motor B |
+                | PC | E0.2 | Motor C |
+                | PD | E0.3 | Motor D |
+                | A | A0.0 | Meldeleuchte |
+                <h4><u>$\color{#D6DEE3}{\textsf{Aufgaben}}$</u></h4><br>
+                $\color{#D6DEE3}{\textsf{1. Entwickeln Sie dazu das notwendige SPS-Programm in der Sprache "FUP"}}$<br>
+                $\color{#D6DEE3}{\textsf{1.1. Ermitteln Sie die jeweils aufgenommene Leistung der Motoren (gerundete Werte)}}$<br>
+                $\color{#D6DEE3}{\textsf{1.2. Erstellen Sie es zuerst auf Papier}}$<br>
+                $\color{#D6DEE3}{\textsf{1.3. Tippen Sie es in den Notebook ins Programm WinSPS 7 ein und testen Sie es}}$<br>
+                <details>
+                    <summary><h3><u>$\color{#D6DEE3}{\textsf{Lösung}}$</u></h3></summary>
+                    <p>1.1.:<br>
+                    Formel: $P = \sqrt{3} \cdot U \cdot I \cdot cos(\varphi)$<br>
+                    Motor A: $P = \sqrt{3} \cdot 400V \cdot 8,5A \cdot cos(0,85) = 5005,62W \approx 5000W \approx 5kW$<br>
+                    Motor B: $P = \sqrt{3} \cdot 400V \cdot 1,7A \cdot cos(0,85) = 1001,13W \approx 1000W \approx 1kW$<br>
+                    Motor C: $P = \sqrt{3} \cdot 400V \cdot 4,8A \cdot cos(0,9) = 2992,98W \approx 3000W \approx 3kW$<br>
+                    Motor D: $P = \sqrt{3} \cdot 400V \cdot 3,2A \cdot cos(0,9) = 1995,32W \approx 2000W \approx 2kW$</p>
+                    <p>1.3.:<br>
+                    $\color{#D6DEE3}{\textsf{&#8226; OB1:}}$<br>
+                    <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/PLACEHOLDER.png" alt="image" width="500" height="auto" alt="(Bild: Installationsassistent)">
+                    <br>
+                    $\color{#D6DEE3}{\textsf{&#8226; FC1:}}$<br>
+                    <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/PLACEHOLDER.png" alt="image" width="500" height="auto" alt="(Bild: Installationsassistent)">
+                    </p>
+                </details>
+            </blockquote>
+        </figure>
     </details>
     <details>
         <summary><h3>4.3. Torantrieb</h3></summary>
@@ -162,6 +207,15 @@
                 $\color{#D6DEE3}{\textsf{Entwickeln Sie das SPS-Programm unter Berücksichtigung o. a. Bedingungen und testen Sie es im OB1!}}$<br>
                 <br></p>
                 <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/aufg1_bilder_1.png" alt="image" width="1200" height="auto" alt="(Bild: Technologieschema)">
+                <details>
+                    <summary><h3><u>$\color{#D6DEE3}{\textsf{Lösung}}$</u></h3></summary>
+                    <p>$\color{#D6DEE3}{\textsf{&#8226; OB1:}}$<br>
+                    <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/PLACEHOLDER.png" alt="image" width="500" height="auto" alt="(Bild: Installationsassistent)">
+                    <br>
+                    $\color{#D6DEE3}{\textsf{&#8226; FC1:}}$<br>
+                    <img src="https://raw.githubusercontent.com/nitrotorben/Meisterschule/main/bilder/PLACEHOLDER.png" alt="image" width="500" height="auto" alt="(Bild: Installationsassistent)">
+                    </p>
+                </details>
             </blockquote>
         </figure>
     </details>
